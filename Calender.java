@@ -1,42 +1,33 @@
-package java_with_DSA;
-
+package javaprojects;
 import java.util.Scanner;
-
 public class Calender {
-
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter ur day:");
 		String Day=sc.nextLine().toLowerCase();
 		switch(Day) {
 		case "monday":
-			System.out.println("lets learn java");
+			System.out.println("lets start python");
+			break;
+		case "tuesday":
+			System.out.println("lets start java");
 			break;
 		case "wednesday":
-			System.out.println("lets learn python");
+			System.out.println("lets start c");
 			break;
-			
-		case "thursday":
-			System.out.println("lets learn javaScript");
+		case "thrusday":
+			System.out.println("lets start WEB");
 			break;
-
-			
 		case "friday":
-			System.out.println("lets learn C++");
+			System.out.println("lets start c++");
 			break;
-
-			
-		case "sauturday":
-			System.out.println("lets learn AdvancPython");
+		case "saturday":
+			System.out.println("lets start ML");
 			break;
 		case "sunday":
-			System.out.println("lets learn Ruby");
+			System.out.println("lets start js");
 			break;
-			
 		default:
-			System.out.println("pls enter athe week days");
-
+			break;	
 		}
 	}
-
 }

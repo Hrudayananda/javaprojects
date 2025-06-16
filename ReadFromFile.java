@@ -1,21 +1,19 @@
-package java_with_DSA;
+package javaprojects;
 
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class ReadFromFile {
 
 	public static void main(String[] args) {
 		try {
-			FileReader reader=new FileReader("C:\\Users\\basha\\OneDrive\\Documents\\text_for_practice.txt\r\n");
+			FileReader reader =new FileReader("C:\\Users\\Nares\\OneDrive\\Desktop\\java.txt");
 			int ch;
-			while((ch = reader.read()) != -1)
-			{
-				System.out.println((char) ch);
+			while((ch=reader.read())!= -1) {
+				System.out.print((char)ch);
 			}
 			reader.close();
-		} catch (IOException e) {
-			System.out.println("error:"+ e.getMessage());
+		}catch (IOException e) {
+			System.out.println("Error:"+ e.getMessage());
 		}
 
 	}

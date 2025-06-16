@@ -1,4 +1,4 @@
-package java_with_DSA;
+package javaprojects;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -6,23 +6,17 @@ import java.util.Queue;
 public class SimpleQueue {
 
 	public static void main(String[] args) {
-		//Queue is a data structure and that Stroes the items in First-in-first-out(FIFO) order
-		Queue<String> Students=new LinkedList<String>();
-		Students.add("Student 1");
-		Students.add("Student 2");
-		Students.add("Student 3");
-		
-		System.out.println(Students);
-		
-		String firstout=Students.poll();
-		System.out.println(firstout);
-		System.out.println(Students);
-		
-		System.out.println(Students.remove());
-		System.out.println(Students);
-		
-		//both remove() and poll() methods are same operation performed
-
+		Queue<String> students = new LinkedList<String>();
+		students.add("student 1");
+		students.add("student 2");
+		students.add("student 3");
+		students.add("student 4");
+		System.out.println(students);
+		String firstOut = students.remove();
+		String lastOut = students.remove();
+		System.out.println(firstOut);
+		System.out.println(lastOut);
+		System.out.println(students);
 	}
 
 }

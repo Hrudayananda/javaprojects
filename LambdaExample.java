@@ -1,15 +1,15 @@
-package java_with_DSA;
+package javaprojects;
 
-interface A
-{
-     int add(int i,int j);
+interface message{
+	void say();
 }
 
-public class LambdaExample
-{
-  public static void main(String[] args) {
-        A obj=(i,j) ->  i+j;
-      int res=obj.add(10, 15);
-       System.out.println(res);
-  }
+public class LambdaExample {
+
+	public static void main(String[] args) {
+		message hellomessage =() -> System.out.println("this is Lambda expression");
+		hellomessage.say();
+
+	}
+
 }
